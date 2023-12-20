@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+        <title>{{ title }} + {{ metadata.title }}</title>
+        <script src="/js/splide.min.js"></script>
+        <link rel="stylesheet" href="/css/main.css" />
+        <link rel="stylesheet" href="/css/splide.min.css" />
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <img src="assets/view-banner.jpg">
+            <header>
+                <h1>{{ metadata.title }}</h1>
+                <h2>sleeps 7 - 5 bedrooms - 3 bathrooms - 3000 sqft</h2>
+                <h2>hot tub - washer/dryer - free wifi</h2>
+                <h2>large outdoor space - deck - dock - water access</h2>
+                <h3><a href="https://www.vrbo.com/2628608">For Current Availability or to Book Instantly</a></h3>
+            </header>
+
+            <section class="splide" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide" data-splide-interval="4000">
+                            <img src="assets/slideshow/01sunrise.jpg" />
+                        </li>
+                        <li class="splide__slide" data-splide-interval="4000">
+                            <img src="assets/slideshow/02backwindow.jpg" />
+                        </li>
+                        <li class="splide__slide" data-splide-interval="4000">
+                            <img src="assets/slideshow/03fronthouse.jpg" />
+                        </li>
+                        <li class="splide__slide" data-splide-interval="4000">
+                            <img src="assets/slideshow/04windowflags.jpg" />
+                        </li>
+                        <li class="splide__slide" data-splide-interval="4000">
+                            <img src="assets/slideshow/06grounds.jpg" />
+                        </li>
+                        <li class="splide__slide" data-splide-interval="4000">
+                            <img src="assets/slideshow/07dock.jpg" />
+                        </li>
+                        <li class="splide__slide" data-splide-interval="4000">
+                            <img src="assets/slideshow/08frontdoor.jpg" />
+                        </li>
+                        <li class="splide__slide" data-splide-interval="4000">
+                            <img src="assets/slideshow/10livingroom.jpg" />
+                        </li>
+                        <li class="splide__slide" data-splide-interval="4000">
+                            <img src="assets/slideshow/11livingroom.jpg" />
+                        </li>
+                        <li class="splide__slide" data-splide-interval="4000">
+                            <img src="assets/slideshow/12dining.jpg" />
+                        </li>
+                        <li class="splide__slide" data-splide-interval="4000">
+                            <img src="assets/slideshow/13kitchen.jpg" />
+                        </li>
+                        <li class="splide__slide" data-splide-interval="4000">
+                            <img src="assets/slideshow/15dock.jpg" />
+                        </li>
+                        <li class="splide__slide" data-splide-interval="4000">
+                            <img src="assets/slideshow/16shack.jpg" />
+                        </li>
+                        <li class="splide__slide" data-splide-interval="4000">
+                            <img src="assets/slideshow/18view.jpg" />
+                        </li>
+                        <li class="splide__slide" data-splide-interval="4000">
+                            <img src="assets/slideshow/19bedroom1.jpg" />
+                        </li>
+                        <li class="splide__slide" data-splide-interval="4000">
+                            <img src="assets/slideshow/20bedroom2.jpg" />
+                        </li>
+                        <li class="splide__slide" data-splide-interval="4000">
+                            <img src="assets/slideshow/21bedroom3.jpg" />
+                        </li>
+                        <li class="splide__slide" data-splide-interval="4000">
+                            <img src="assets/slideshow/22bath1.jpg" />
+                        </li>
+                        <li class="splide__slide" data-splide-interval="4000">
+                            <img src="assets/slideshow/23bath2.jpg" />
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <main>{{ content | safe }}</main>
+
+
+            <footer id="contact">
+                <h3><a href="https://www.vrbo.com/2628608">For Current Availability or to Book Instantly</a></h3>
+                <p>&copy;2023. All photos by Marc English</p>
+            </footer>
+
+            <img src="assets/grounds-banner.jpg">
+        </div>
+    </body>
+    <script>
+        new Splide(".splide", {
+            type: "loop",
+            autoplay: true,
+            width: "1024px",
+            heightRatio: "0.75",
+            pauseOnHover: true,
+            speed: 600,
+            drag: true,
+        }).mount();
+        new Splide();
+    </script>
+</html>
